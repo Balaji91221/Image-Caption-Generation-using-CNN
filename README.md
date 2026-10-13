@@ -1,21 +1,32 @@
-🚀 **Project Description: Image Caption Generation**
+# Image Caption Generation
 
-📌 **Overview:**
-The "Image Caption Generation" project combines the power of deep learning with Python, Flask, and LSTM networks to automatically generate human-readable captions for images, bridging the gap between visual content and natural language.
+A concept repository exploring how computer vision and language generation can turn an image into a short textual description.
 
-🎯 **Objective:**
-Our goal is to create a system that understands image content and produces descriptive captions, a task traditionally reserved for human cognition.
+## Motivation
 
-📅 **Project Phases:**
-- 🧠 Ideation: Understand stakeholders and brainstorm solutions.
-- 🏗️ Design: Propose solutions, create architecture, and define data flow.
-- 📊 Planning: Choose the tech stack and create a project plan.
-- 🛠️ Development: Implement features, optimize code, and handle exceptions.
-- 📈 Performance: Test the model and prepare final deliverables.
+An image is not directly searchable or readable as a sentence. Captioning models connect visual information with language, making the task a useful learning exercise at the intersection of computer vision and natural-language processing.
 
-💻 **Technologies:**
-- Python: Core language for deep learning and web app.
-- Flask: Web framework for the user interface.
-- LSTM: Key for image understanding and caption generation.
+## Current status
 
-🔍 We are currently in the initial stages, and as the project progresses, we anticipate groundbreaking results in image caption generation.
+The public repository currently contains only this README. It does **not** contain application source, a training notebook, datasets, model weights, or a dependency manifest.
+
+The original project description proposed Python, Flask, and an LSTM-based caption generator. Those are design intentions, not implemented capabilities in this repository.
+
+## Conceptual architecture
+
+```mermaid
+flowchart LR
+  Image[Input image] --> Encoder[Visual feature encoder]
+  Encoder --> Decoder[Sequence decoder]
+  Decoder --> Caption[Generated caption]
+```
+
+This diagram describes the concept only. A CNN can provide visual features, while an LSTM can generate a sequence of caption tokens; the actual model selection and implementation are not present here.
+
+## Using this repository
+
+Read the project overview on GitHub. There is no installation or run command for the current contents, and no model performance or deployment result is claimed.
+
+## Contribution context
+
+Any future implementation should document its dataset, preprocessing, model artifacts, evaluation method, and reproducible environment alongside the code. The present repository is an introduction to the idea.
